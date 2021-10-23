@@ -43,6 +43,7 @@ public class EssayController {
            response.setStatus(HttpStatus.SC_BAD_REQUEST);
            data.setMessage("请求参数错误");
            return data;
+
        }
         String authorization = request.getHeader("Authorization");
        if(authorization==null){
